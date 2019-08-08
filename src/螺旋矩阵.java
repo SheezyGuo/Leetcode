@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class T54 {
+class 螺旋矩阵 {
     public List<Integer> spiralOrder(int[][] matrix) {
         if (matrix == null || matrix[0] == null || matrix[0].length == 0) {
             return new ArrayList<>();

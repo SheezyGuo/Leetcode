@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class T145 {
+public class 二叉树非递归后序遍历 {
 
     //Definition for a binary tree node.
     public class TreeNode {

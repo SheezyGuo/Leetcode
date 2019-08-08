@@ -1,6 +1,6 @@
 import java.util.*;
 
-//public class T146 {
+//public class LRU缓存 {
 //    private Deque<Integer> deque;
 //    private HashMap<Integer, Integer> map;
 //    private int MAX_LENGTH;
@@ -39,10 +39,10 @@ import java.util.*;
 //    }
 //}
 
-class T146 extends LinkedHashMap<Integer, Integer> {
+class LRU缓存 extends LinkedHashMap<Integer, Integer> {
     private int capacity;
 
-    public T146(int capacity) {
+    public LRU缓存(int capacity) {
         super(capacity, 0.75F, true);
         this.capacity = capacity;
     }

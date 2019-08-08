@@ -1,4 +1,4 @@
-public class 跳跃游戏 {
+public class    跳跃游戏 {
     public static int jump(int n){
         int[] dp = new int[n+1];
         dp[0]=1;

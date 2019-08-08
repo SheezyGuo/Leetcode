@@ -1,4 +1,4 @@
-class T468 {
+class 验证IP地址 {
     public String validIPAddress(String IP) {
         if (isIPv4(IP)) {
             return "IPv4";
@@ -111,8 +111,8 @@ class T468 {
 
 
     public static void main(String[] args) {
-        T468 t468 = new T468();
-        t468.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334::");
+        验证IP地址 验证IP地址 = new 验证IP地址();
+        验证IP地址.validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334::");
 
     }
 }

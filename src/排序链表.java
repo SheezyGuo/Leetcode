@@ -1,4 +1,4 @@
-public class T148 {
+public class 排序链表 {
 
 
     //Definition for singly-linked list.
@@ -67,7 +67,7 @@ public class T148 {
     }
 
     public static void main(String[] args) {
-        T148 t148 = new T148();
+        排序链表 排序链表 = new 排序链表();
         ListNode n1 = new ListNode(4);
         ListNode n2 = new ListNode(2);
         ListNode n3 = new ListNode(1);
@@ -76,7 +76,7 @@ public class T148 {
         n2.next = n3;
         n3.next = n4;
         n4.next = null;
-        ListNode h = t148.sortList(n1);
+        ListNode h = 排序链表.sortList(n1);
         while (h != null) {
             System.out.println(h.val);
             h = h.next;

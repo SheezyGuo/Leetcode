@@ -1,8 +1,8 @@
-public class Heap {
+public class 堆排序 {
     private int[] data;
     private int length;
 
-    public Heap(int[] nums) {
+    public 堆排序(int[] nums) {
         this.data = new int[nums.length + 1];
         for (int i = 0; i < nums.length; i++) {
             data[i + 1] = nums[i];
@@ -67,7 +67,7 @@ public class Heap {
 
     public static void main(String[] args) {
         int data[] = new int[]{10, 2, 5, 12, 5, 6, 1, 23, 65, 1};
-        Heap heap = new Heap(data);
+        堆排序 heap = new 堆排序(data);
         heap.sort();
         for (int i = 1; i < heap.data.length; i++) {
             System.out.println(heap.data[i]);

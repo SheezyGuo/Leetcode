@@ -36,4 +36,25 @@ public class 秘密通信 {
             System.out.printf("%d", i);
         }
     }
+
+    public static void main2(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+        String secret = scanner.next();
+        char[] result = new char[n];
+        result[0] = secret.charAt(0);
+        for (int i = 1; i < k; i++) {
+            result[i] = xor(secret.charAt(i), secret.charAt(i - 1));
+        }
+        for (int i = k; i < n; i++) {
+            result[i] = xor(xor(secret.charAt(i), secret.charAt(i - 1)), result[i - k]);
+        }
+
+        System.out.println(new String(result));
+    }
+
+    private static char xor(char a, char b) {
+        return a == b ? '0' : '1';
+    }
 }

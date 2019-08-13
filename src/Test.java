@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class Test {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
 
 
         NavigableSet<String> sortedTreeSet = new TreeSet<String>(); // SortedSet接收TreeSet的实例
@@ -35,4 +35,27 @@ public class Test {
 
         System.out.println("=====================================");
     }
+
+    public static void main(String[] args) {
+
+        String str1 = "abc";
+
+        String str2 = new String("def");
+
+        String str3 = "abc";
+
+
+        String str5 = "def";
+
+        String str4 = str2.intern();
+
+        System.out.println(str1 == str3);//true
+
+        System.out.println(str2 == str4);//false
+
+        System.out.println(str4 == str5);//true
+
+    }
+
+
 }

@@ -42,7 +42,7 @@ public class 逆序对 {
         }
         while (p2 <= e2) {
             copy[i++] = array[p2++];
-            // count++;javascript:void(0);
+            // count++;
         }
         for (int j = s1; j <= e2; j++) {
             array[j] = copy[j - s1];

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class 全排列2 {
-    public List<List<Integer>> permuteUnique(int[] nums) {
+    public static List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         if (nums == null || nums.length == 0) {
@@ -13,7 +13,7 @@ public class 全排列2 {
         return res;
     }
 
-    public void permute(int[] nums, int start, List<List<Integer>> res) {
+    public static void permute(int[] nums, int start, List<List<Integer>> res) {
         if (start == nums.length) {
             List<Integer> list = new ArrayList<>();
             for (int num : nums)
@@ -38,9 +38,17 @@ public class 全排列2 {
         }
     }
 
-    public void swap(int[] nums, int a, int b) {
+    public static void swap(int[] nums, int a, int b) {
         int tmp = nums[a];
         nums[a] = nums[b];
         nums[b] = tmp;
     }
+
+    public static void main(String[] args) {
+        List<List<Integer>> list = permuteUnique(new int[]{1, 2, 1, 2, 3});
+        for (List<Integer> l : list) {
+            System.out.println(l.toString());
+        }
+    }
+
 }

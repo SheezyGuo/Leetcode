@@ -1,4 +1,5 @@
 import javax.xml.bind.SchemaOutputResolver;
+import java.util.Arrays;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
@@ -35,27 +36,4 @@ public class Test {
 
         System.out.println("=====================================");
     }
-
-    public static void main(String[] args) {
-
-        String str1 = "abc";
-
-        String str2 = new String("def");
-
-        String str3 = "abc";
-
-
-        String str5 = "def";
-
-        String str4 = str2.intern();
-
-        System.out.println(str1 == str3);//true
-
-        System.out.println(str2 == str4);//false
-
-        System.out.println(str4 == str5);//true
-
-    }
-
-
 }

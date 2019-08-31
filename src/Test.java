@@ -54,6 +54,8 @@ public class Test {
 //    }
 
     public static void main(String[] args) {
-        System.out.println(Math.round(-1.6));
+        String a = "a";
+        String b = "b";
+        System.out.println(("a" + "b") == (a + b));
     }
 }
